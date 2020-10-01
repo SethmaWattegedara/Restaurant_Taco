@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Baloo Chettan 2', cursive;
+    line-height: 1.5;
+}
+
+.title-text{
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Nav Bar */
+
+.Navbar{
+    width:100%;
+    height:100%;
+    text-align: right;
+}
+
+
+.menu ul{
+    display: inline-flex;
+    margin: 50px;
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: white;   
+    cursor: pointer;
+}
+
+.logo img{
+    width: 30px;
+}
+
+/* Nav Bar End */
+
+/* header*/
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+    url('images/food-home.jpg') center/cover no-repeat fixed;
+    margin-top: auto;
+
+}
+
+.img-welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+}
+
+.img-welcome .title{
+    color: white;
+    font-size: 50px;
+    
+
+}
+
+.goto-order-button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    border: 2px solid orange;
+    margin-top: 10px;
+}
+
+.goto-order-button:hover{
+    background: white;
+    color: orange;
+    border:none;
+}
+
+.pulsate{
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: .3;
+    color: black;
+}
+
+@-webkit-keyframes pulsate{
+    0%{
+        opacity: .3;
+    }
+    50%{
+        opacity: 1;
+      
+    }
+    100%{
+        opacity: .3;
+    }
+
+}
+/* end of the header */
+
+/* Service */
+.service{
+       
+       padding-bottom: 50px;
+       padding-top: 50px;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.container .box{
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(255, 216, 144, 0.945);
+}
+
+.container .box .icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+
+}
+/* end Service */
+
+
+/* About us */
+
+#about{
+    padding: 40px;
+}
+.about{
+    margin: 30px 0;
+    display: flex;
+}
+.about-icon .fas{
+    font-size: 60px;
+    color: orange;
+    margin-right: 20px;
+}
+.about-subtitle{
+    text-transform: capitalize;
+    color: orange;
+    font-size: 25px;
+}
+.about-info{
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.about-icon:hover .fas,
+.about-subtitle:hover{
+    transition: transform 2s ease, color 2s ease;
+    transform: translateY(-10px);
+    color: orange;
+    cursor: pointer;
+ }
+ @media screen and (min-width:576px){
+     .about-center{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+     .about{
+         flex: 0 0 calc(50% - 16px);
+     }
+     .Navbar{
+        flex: 0 0 calc(50% - 16px);
+    }
+
+ }
+ @media screen and (main-width:972px){
+     .about{
+         flex: 0 0 calc(33.3% = 16px)
+     }
+     .Navbar{
+        flex: 0 0 calc(33.3% = 16px)
+    }
+
+
+ }
+/* End of the about Us */
